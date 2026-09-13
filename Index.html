@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="judul">
+        <h1>Cashier</h1>
+    </div>
+    <div class="box">
+        <h2>Barang</h2>
+        <input type="text" id="namaBarang" placeholder="Masukkan Nama Barang"> 
+        <!--untuk input itu memunculkan sebuah box input dengan type text placeholder itu untuk memasukan tulisan abu abu di dalam input box 
+        id itu indetitas untuk javascript-->
+        <input type="number" id="jumlahBarang" placeholder="Masukkan Jumlah Barang">
+        <!--sama seperti input pertama tapi dengan type nomor-->
+        <div>
+            <div class="row">
+                <h2>Harga</h2>
+                <input type="number" id="hargaBarang" placeholder="Masukkan Harga Barang">
+                <button onclick="hitungTransaksi()">Hitung transaksi</button>
+                <!--memunculkan tombol dengan id onclick yang akan dimodifikasi oleh javascript-->
+            </div>
+        </div>
+        <div class="hasil-box" id="hasilBox" style="display: none;">
+            <!--untuk hasilbox itu untuk javascript identity dengan display none berarti belom terlihat
+            tapi saat diganti ke box displaynya di javascript dia akan menampilkannya saat kita jalankan-->
+            <div class="hasil-item">
+                <span>Nama Barang:</span>
+                <span id="resNama">-</span>
+            </div>
+            <div class="hasil-item">
+                <span>Diskon:</span>
+                <span id="resDiskon">0%</span>
+            </div>
+            <div class="hasil-item">
+                <span>Subtotal:</span>
+                <span id="resSubtotal">Rp0</span>
+            </div>
+
+            <div class="hasil-item">
+                <span>Total Bayar:</span>
+                <span id="resTotal">Rp0</span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>

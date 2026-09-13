@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.judul{
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;
+}
+
+.box {
+    width: 100%;
+    max-width: 540px;
+    margin: 70px auto 20px;
+    padding: 40px 30px 25px;
+    border-radius: 10px;
+    justify-content: space-between;
+    filter: drop-shadow(3px 3px 20px rgba(0, 0, 0, 0.4));
+    background-color: rgb(255, 255, 255);
+}
+
+.box h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.box h2 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+input{
+    flex: 1;
+    border: 100px;
+    outline: 10px;
+    background: white;
+    padding: 10px 25px;
+    justify-content: left;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    margin-left: 25px;
+}
+
+.product{
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    padding: 10px 25px;
+    justify-content: center;
+}
+
+button{
+    display: block;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.hasil-box {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 2px dashed #eee;
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.hasil-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #444;
+    font-weight: bolder;
+}
+
+.hasil-item.total {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    margin-top: 12px;
+    filter: drop-shadow(3px 3px 20px rgba(0, 0, 0, 0.4));
+}
